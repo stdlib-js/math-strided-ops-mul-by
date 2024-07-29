@@ -50,13 +50,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import mulBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-strided-ops-mul-by@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-strided-ops-mul-by/tags). For example,
+
+```javascript
 import mulBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-strided-ops-mul-by@v0.2.2-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-strided-ops-mul-by@v0.2.2-esm/index.mjs';
+import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-strided-ops-mul-by@esm/index.mjs';
 ```
 
 #### mulBy( N, x, strideX, y, strideY, z, strideZ, clbk\[, thisArg] )
@@ -236,7 +241,7 @@ mulBy.ndarray( 3, x, 2, 1, y, -1, y.length-1, z, 1, 2, accessor );
 var uniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-uniform' ).factory;
 import filledarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@esm/index.mjs';
 import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@esm/index.mjs';
-import mulBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-strided-ops-mul-by@v0.2.2-esm/index.mjs';
+import mulBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-strided-ops-mul-by@esm/index.mjs';
 
 function accessor( values, i ) {
     if ( (i%3) === 0 ) {
