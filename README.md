@@ -35,7 +35,7 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> Element-wise [multiplication][@stdlib/math/base/ops/mul] of two strided arrays via a callback function.
+> Element-wise [multiplication][@stdlib/number/float64/base/mul] of two strided arrays via a callback function.
 
 <section class="intro">
 
@@ -73,7 +73,7 @@ var mulBy = require( '@stdlib/math-strided-ops-mul-by' );
 
 #### mulBy( N, x, strideX, y, strideY, z, strideZ, clbk\[, thisArg] )
 
-Performs element-wise [multiplication][@stdlib/math/base/ops/mul] of two strided arrays via a callback function and assigns each result to an element in an output strided array.
+Performs element-wise [multiplication][@stdlib/number/float64/base/mul] of two strided arrays via a callback function and assigns each result to an element in an output strided array.
 
 ```javascript
 function accessor( values ) {
@@ -170,7 +170,7 @@ mulBy( 3, x1, -2, y1, 1, z1, 1, accessor );
 
 #### mulBy.ndarray( N, x, strideX, offsetX, y, strideY, offsetY, z, strideZ, offsetZ, clbk\[, thisArg] )
 
-Performs element-wise [multiplication][@stdlib/math/base/ops/mul] of two strided arrays via a callback function and assigns each result to an element in an output strided array using alternative indexing semantics.
+Performs element-wise [multiplication][@stdlib/number/float64/base/mul] of two strided arrays via a callback function and assigns each result to an element in an output strided array using alternative indexing semantics.
 
 ```javascript
 function accessor( values ) {
@@ -362,7 +362,7 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/math/base/ops/mul]: https://github.com/stdlib-js/math-base-ops-mul
+[@stdlib/number/float64/base/mul]: https://github.com/stdlib-js/number-float64-base-mul
 
 <!-- <related-links> -->
 
